@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Projects{% endblock title %}
+
+{% block content %}
+<div class='bg-gray-800 text-white p-5 md:py-8 md:px-20 lg:px-40 xl:px-60'>
+  <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Projects Completed</p>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+     <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="{% static 'images/prediction.webp' %}" alt="Price Prediction Project">
+
+          <div>
+            <p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Real estate home price prediction using Machine Learning<p>
+            <p class='text-justify my-3'>Built a regression model in Python to predict house prices using key features. Performed data preprocessing, feature engineering, and model optimization with Scikit-learn.</p>
+            <ul class='mb-3'>
+              <li>&#9989; Predict house prices based on features like location, area, and number of rooms.</li>
+              <li>&#9989;  Performed data cleaning, feature engineering, and exploratory analysis to identify key drivers of price variations.</li>
+              <li>&#9989;  Trained and evaluated multiple machine learning algorithms using Scikit-learn, optimizing model performance through cross-validation.
+              </li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-python"></i> Python</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-solid fa-server"></i> Scikit-learn </span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-python"></i> Matplotlib / Seaborn </span>
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='https://github.com/Ranjith1302/Real-estate-home-price-prediction-using-Machine-Learning'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>
+            </div>
+          </div>
+      </div>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="{% static 'images/aws.jpg' %}" alt="image">
+          <div>
+            <p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Real-Time IoT Data Streaming and Analytics using AWS</p>
+            <p class='text-justify my-3'>Designed a real-time data pipeline with AWS Kinesis and S3 to ingest, store, and analyze IoT sensor data, enabling timely insights and improved operational responsiveness.</p>
+            <ul class='mb-3'>
+              <li>&#9989; Designed and implemented a real-time data pipeline for continuous ingestion of IoT sensor data using AWS Kinesis Data Firehose.</li>
+              <li>&#9989; Enabled streaming analytics and decision-making by integrating data with Amazon S3 for scalable storage and downstream processing.</li>
+              <li>&#9989; Delivered timely and accurate insights from real-time data streams, improving monitoring and responsiveness for IoT-driven operations.</li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-python"></i> Python</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-css3-alt"></i> AWS</span>
+            </div>
+          </div>
+      </div>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="{% static 'images/traffivc.jpg' %}" alt="traffic">
+          <div>
+            <p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Traffic Prediction for Intelligent Transportation Systems Using Machine Learning</p>
+            <p class='text-justify my-3'>Built a regression model using historical and time-based data to predict traffic patterns, enabling proactive traffic management and smarter routing decisions.</p>
+            <ul class='mb-3'>
+              <li>&#9989; Developed a machine learning model to predict traffic flow patterns using historical data and time-based features for improved transportation
+planning.</li>
+              <li>&#9989; Applied data preprocessing techniques and trained regression models to generate accurate, real-time traffic predictions.</li>
+              <li>&#9989; Enabled proactive traffic management by delivering timely insights to support intelligent routing and congestion reduction strategies.</li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-python"></i> Python</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-solid fa-server"></i> Scikit-learn </span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-python"></i> Matplotlib / Seaborn 
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='https://github.com/Ranjith1302/Traffic-Prediction-for-Intelligent-Transportation-Systems-Using-Machine-Learning'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>             
+            </div>
+          </div>
+      </div>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="{% static 'images/Hybrid-Systems.png' %}" alt="Price Prediction Project">
+          <div>
+            <p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Recommendation System using Machine Learning with Python</p>
+            <p class='text-justify my-3'>Developed a Recommendation System using machine learning in Python, applying content-based, collaborative, and hybrid filtering techniques. The system delivers personalized suggestions, commonly used in e-commerce, streaming platforms, and social media. Implemented with real-world datasets and evaluated using standard performance metrics to demonstrate practical applications and effectiveness.</p>
+            <ul class='mb-3'>
+              <li>&#9989; Exploratory Data Analysis (EDA)</li>
+              <li>&#9989; Model evaluation and performance comparison</li>
+              <li>&#9989; Interactive recommendations based on user input</li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-python"></i> Python</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-solid fa-server"></i> Scikit-learn </span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-python"></i> Matplotlib / Seaborn 
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='https://github.com/Ranjith1302/Recommendation-System-using-Machine-Learning-with-Python'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>              
+            </div>
+          </div>
+      </div>
+      <div class='flex justify-center'>
+        <a href='https://github.com/Ranjith1302' target='_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-blue-600 outline hover:outline-none outline-blue-600 transition delay-75 ease-in-out my-3'>Load more <i class="bi bi-arrow-clockwise font-extrabold"></i></button></a>
+      </div>
+</div>
+      {% endblock %}

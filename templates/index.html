@@ -1,0 +1,353 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+  <!-- Page Wrapper with Dark Background -->
+  <div class="bg-gray-900 text-gray-100">
+
+    <!-- Hero Section -->
+    <div class="hero-section bg-gray-900 text-center flex flex-col justify-center items-center h-[550px] md:h-[580px] lg:h-[600px]">
+      <span class="font-mono text-gray-400 mb-2"><span class="wave">&#128075;</span> Hi, I am Ranjith Namala</span>
+      <span style="font-family: Poppins-Bold" class="z-40 text-3xl font-extrabold md:text-4xl lg:text-5xl px-4 md:px-20">
+        I'm a Data Engineer. This is my portfolio & Blog.
+      </span>
+      <!-- Portrait Image -->
+      <div class="mt-8">
+        <img src="{% static 'images/portfolio_bw_vignette_circle_adjusted.png' %}" alt="Ranjith Portrait" class="w-60 h-60 rounded-full border-4 border-black shadow-lg mx-auto">
+      </div>
+
+
+      <!-- Centered Hero Buttons -->
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-6">
+        <a href="https://drive.google.com/file/d/1cayu2K22JAZjnxyV4OzSwDN6GlhulGJi/view?usp=sharing" download class="relative group">
+          <div class="absolute -inset-0.5 bg-gradient-to-r from-cyan-300 to-blue-600 blur opacity-75 group-hover:-inset-1 transition duration-1000"></div>
+          <button class="relative bg-gray-800 px-7 py-2 text-white rounded-md font-semibold group-hover:text-gray-50 transition duration-200">
+            <i class="bi bi-download font-extrabold"></i> Resume
+          </button>
+        </a>
+        <a href="/about" class="relative group">
+          <div class="absolute -inset-0.5 bg-gradient-to-r from-cyan-300 to-blue-600 blur opacity-75 group-hover:-inset-1 transition duration-1000"></div>
+          <button class="relative bg-gray-800 px-7 py-2 text-white rounded-md font-semibold group-hover:text-gray-50 transition duration-200">
+            <i class="bi bi-person"></i> About me
+          </button>
+        </a>
+      </div>
+    </div>
+
+
+
+    <!-- Timeline Section -->
+    <div id="timeline" class="bg-gray-800 py-12 px-6 md:px-20 section-3d projects-3d">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Career Timeline</h2>
+      <div class="relative border-l-4 border-blue-500 ml-8 space-y-8">
+         <div class='relative border-l border-blue-500 ml-6'>
+    
+    <!-- CapitalOne -->
+    <div class='mb-10 ml-6'>
+      <span class='absolute -left-3.5 top-1 w-6 h-6 bg-blue-600 rounded-full border-2 border-white'></span>
+      <h3 class='text-xl font-semibold text-cyan-300'>Data Engineer – CapitalOne <span class='text-sm text-gray-400'>| Contract | San Francisco, CA | Jan 2024 – Present</span></h3>
+      <ul class='list-disc list-inside mt-2 space-y-1 text-sm md:text-base'>
+        <li>Designed a secure archiving solution for unstructured data from Box to S3.</li>
+        <li>Built AWS Lambda functions to extract and process critical metadata.</li>
+        <li>Implemented SQS-based metadata workflows and DLQs for failover.</li>
+        <li>Ensured secure AES 256-bit encryption during all transfers.</li>
+        <li>Automated data migration with AWS DMS and enabled data lakes via Glue & Athena.</li>
+      </ul>
+    </div>
+
+    <!-- SNKMDR Technologies -->
+    <div class='mb-10 ml-6'>
+      <span class='absolute -left-3.5 top-1 w-6 h-6 bg-blue-600 rounded-full border-2 border-white'></span>
+      <h3 class='text-xl font-semibold text-cyan-300'>Data Engineer I – SNKMDR Technologies <span class='text-sm text-gray-400'>| Chennai, India | Jul 2021 – Dec 2022</span></h3>
+      <ul class='list-disc list-inside mt-2 space-y-1 text-sm md:text-base'>
+        <li>Automated Outlook task monitoring using Python scripts.</li>
+        <li>Built serverless ETL pipelines using S3 events, Lambda, and Glue Crawlers.</li>
+        <li>Implemented CloudWatch and SNS notifications for monitoring pipeline stages.</li>
+        <li>Used Glue DataBrew and Athena for transformation, querying, and visualization in Tableau.</li>
+      </ul>
+    </div>
+
+    <!-- Adani Group -->
+    <div class='ml-6'>
+      <span class='absolute -left-3.5 top-1 w-6 h-6 bg-blue-600 rounded-full border-2 border-white'></span>
+      <h3 class='text-xl font-semibold text-cyan-300'>Data Engineer Intern – Adani Group <span class='text-sm text-gray-400'>| Chennai, India | Feb 2021 – Jul 2021</span></h3>
+      <ul class='list-disc list-inside mt-2 space-y-1 text-sm md:text-base'>
+        <li>Automated Redshift data validation and optimized query performance.</li>
+        <li>Designed star schema and ETL pipelines using SQL and Python.</li>
+        <li>Built dashboards in Tableau and QuickSight to visualize KPIs.</li>
+        <li>Structured new data sources and resolved ETL quality issues with AWS Glue Spark.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+<div id="about" class="bg-gray-800 text-white py-12 px-6 md:px-20 section-3d projects-3d">
+  <h2 style="font-family: Poppins-Bold" class="text-4xl font-extrabold mb-6 text-center">About Me</h2>
+  <p class='text-justify'>
+    &#128075; Hi,<br><br>
+
+    I am a results-driven Data Engineer with over 3 years of experience in designing and building scalable data solutions across cloud platforms like AWS and Azure. My expertise lies in architecting robust data pipelines, managing large-scale data lakes, and optimizing end-to-end data workflows for analytics, regulatory compliance, and business intelligence..<br><br>
+
+    I have hands-on experience working with cutting-edge technologies including Spark, PySpark, Azure Data Factory, Databricks, AWS Glue, Lambda, S3, and Redshift. I specialize in building real-time and batch processing systems, developing secure cloud infrastructure, and automating data ingestion, transformation, and orchestration using tools like Apache Airflow, Kinesis, and Kubernetes.<br><br>
+
+    My technical toolkit includes strong programming skills in Python, SQL, and Scala, with a solid foundation in machine learning, data modeling, and dashboard development using Tableau and Power BI. I bring a deep understanding of big data frameworks like Hadoop, Hive, and EMR, as well as practical experience in data warehousing, containerization, and DevOps practices. Here are my <span class='group text-cyan-200'><a href='/projects' class='bg-left-bottom bg-gradient-to-r from-cyan-300 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>projects</a></span> in action.<br><br>
+
+    I hold a Master’s degree in Computer Engineering from California State University, Fresno, and have supported academic learning as a Teaching Assistant, guiding students in machine learning and applied programming. Known for my proactive approach and collaborative mindset, I consistently drive data initiatives that enhance operational efficiency, data governance, and decision-making..<br><br>
+  </p>
+  <div class='my-10'>
+    <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Skills</p>
+    <div class='grid grid-cols-1 md:grid-cols-2 md:space-x-4 lg:space-x-10'>
+      <div>
+        <div class='my-3'>
+          <p class="text-base font-medium my-3">Cloud Data Engineering (AWS & Azure)</p>
+          <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+            <div class="html bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+          </div>  
+        </div>
+        <div class='my-3'>
+          <p class="text-base font-medium my-3">Big Data Technologies</p>
+          <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+            <div class="js bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+          </div>  
+        </div>
+        <div class='my-3'>
+          <p class="text-base font-medium my-3">ETL Development & Automation</p>
+          <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+            <div class="sql bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+          </div>  
+        </div>
+      </div>
+
+      <div>
+        <div class='my-3'>
+          <p class="text-base font-medium my-3">Programming with Python & SQL</p>
+          <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+            <div class="css bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+          </div>  
+        </div>
+        <div class='my-3'>
+          <p class="progress-bar text-base font-medium my-3">Data Modeling & Warehousing</p>
+          <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+            <div class="py bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <style>
+  .progress-bar {
+    animation: progress-bar-animation 1s normal forwards;
+  }
+  @keyframes progress-bar-animation {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+
+  .html { animation: html-animation 3s normal forwards; }
+  @keyframes html-animation {
+    0% { width: 0%; }
+    100% { width: 95%; }
+  }
+
+  .css { animation: css-animation 3s normal forwards; }
+  @keyframes css-animation {
+    0% { width: 0%; }
+    100% { width: 85%; }
+  }
+
+  .js { animation: js-animation 3s normal forwards; }
+  @keyframes js-animation {
+    0% { width: 0%; }
+    100% { width: 70%; }
+  }
+
+  .py { animation: py-animation 3s normal forwards; }
+  @keyframes py-animation {
+    0% { width: 0%; }
+    100% { width: 90%; }
+  }
+
+  .sql { animation: sql-animation 3s normal forwards; }
+  @keyframes sql-animation {
+    0% { width: 0%; }
+    100% { width: 80%; }
+  }
+</style>
+
+<!-- Projects Completed Section -->
+<div id="projects" class="bg-gray-800 py-12 px-4 sm:px-6 md:px-10 lg:px-20">
+  <h2 class="text-3xl sm:text-4xl font-extrabold mb-8 text-center text-white font-[Poppins-Bold]">Projects Completed</h2>
+
+  {% comment %} Project 1 {% endcomment %}
+  <div class="flex flex-col lg:flex-row gap-6 bg-gray-900 p-5 mb-6 rounded-lg shadow-lg">
+    <img class="rounded-lg object-cover w-full lg:w-[350px] h-[180px]" src="{% static 'images/prediction.webp' %}" alt="Price Prediction Project">
+    <div class="text-white">
+      <p class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600 font-[Poppins-Bold]">
+        Real estate home price prediction using Machine Learning
+      </p>
+      <p class="text-justify my-3">Built a regression model in Python to predict house prices using key features. Performed data preprocessing, feature engineering, and model optimization with Scikit-learn.</p>
+      <ul class="mb-3 space-y-1">
+        <li>✔️ Predict house prices based on features like location, area, and number of rooms.</li>
+        <li>✔️ Performed data cleaning, feature engineering, and exploratory analysis to identify key drivers of price variations.</li>
+        <li>✔️ Trained and evaluated multiple machine learning algorithms using Scikit-learn, optimizing model performance through cross-validation.</li>
+      </ul>
+      <span class="text-lg font-bold">Technologies used</span>
+      <div class="flex flex-wrap gap-2 my-3">
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Python</span>
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Scikit-learn</span>
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Matplotlib / Seaborn</span>
+      </div>
+      <div class="my-3">
+        <a href="https://github.com/Ranjith1302/Real-estate-home-price-prediction-using-Machine-Learning" target="_blank">
+          <button class="bg-gray-800 px-4 py-2 rounded hover:bg-slate-700 transition">
+            <i class="bi bi-github"></i> Github
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {% comment %} Project 2 {% endcomment %}
+  <div class="flex flex-col lg:flex-row gap-6 bg-gray-900 p-5 mb-6 rounded-lg shadow-lg">
+    <img class="rounded-lg object-cover w-full lg:w-[350px] h-[180px]" src="{% static 'images/aws.jpg' %}" alt="AWS IoT Project">
+    <div class="text-white">
+      <p class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600 font-[Poppins-Bold]">
+        Real-Time IoT Data Streaming and Analytics using AWS
+      </p>
+      <p class="text-justify my-3">Designed a real-time data pipeline with AWS Kinesis and S3 to ingest, store, and analyze IoT sensor data, enabling timely insights and improved operational responsiveness.</p>
+      <ul class="mb-3 space-y-1">
+        <li>✔️ Designed and implemented a real-time data pipeline using AWS Kinesis Data Firehose.</li>
+        <li>✔️ Integrated with Amazon S3 for scalable storage and processing.</li>
+        <li>✔️ Improved monitoring and responsiveness through real-time analytics.</li>
+      </ul>
+      <span class="text-lg font-bold">Technologies used</span>
+      <div class="flex flex-wrap gap-2 my-3">
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Python</span>
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">AWS</span>
+      </div>
+    </div>
+  </div>
+
+  {% comment %} Project 3 {% endcomment %}
+  <div class="flex flex-col lg:flex-row gap-6 bg-gray-900 p-5 mb-6 rounded-lg shadow-lg">
+    <img class="rounded-lg object-cover w-full lg:w-[350px] h-[180px]" src="{% static 'images/traffivc.jpg' %}" alt="Traffic Prediction Project">
+    <div class="text-white">
+      <p class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600 font-[Poppins-Bold]">
+        Traffic Prediction for Intelligent Transportation Systems
+      </p>
+      <p class="text-justify my-3">Built a regression model using historical and time-based data to predict traffic patterns, enabling proactive traffic management and smarter routing decisions.</p>
+      <ul class="mb-3 space-y-1">
+        <li>✔️ Used time-series and regression analysis to predict traffic flows.</li>
+        <li>✔️ Enabled intelligent routing and congestion mitigation.</li>
+        <li>✔️ Applied data preprocessing and visualization with Seaborn.</li>
+      </ul>
+      <span class="text-lg font-bold">Technologies used</span>
+      <div class="flex flex-wrap gap-2 my-3">
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Python</span>
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Scikit-learn</span>
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Matplotlib / Seaborn</span>
+      </div>
+      <div class="my-3">
+        <a href="https://github.com/Ranjith1302/Traffic-Prediction-for-Intelligent-Transportation-Systems-Using-Machine-Learning" target="_blank">
+          <button class="bg-gray-800 px-4 py-2 rounded hover:bg-slate-700 transition">
+            <i class="bi bi-github"></i> Github
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {% comment %} Project 4 {% endcomment %}
+  <div class="flex flex-col lg:flex-row gap-6 bg-gray-900 p-5 mb-6 rounded-lg shadow-lg">
+    <img class="rounded-lg object-cover w-full lg:w-[350px] h-[180px]" src="{% static 'images/Hybrid-Systems.png' %}" alt="Recommendation System Project">
+    <div class="text-white">
+      <p class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600 font-[Poppins-Bold]">
+        Recommendation System using Machine Learning with Python
+      </p>
+      <p class="text-justify my-3">Developed a Recommendation System using content-based, collaborative, and hybrid filtering techniques. Delivered personalized suggestions and evaluated models using real-world data and standard performance metrics.</p>
+      <ul class="mb-3 space-y-1">
+        <li>✔️ Performed EDA and feature selection</li>
+        <li>✔️ Built hybrid recommendation models</li>
+        <li>✔️ Provided real-time interactive suggestions</li>
+      </ul>
+      <span class="text-lg font-bold">Technologies used</span>
+      <div class="flex flex-wrap gap-2 my-3">
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Python</span>
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Scikit-learn</span>
+        <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full">Matplotlib / Seaborn</span>
+      </div>
+      <div class="my-3">
+        <a href="https://github.com/Ranjith1302/Recommendation-System-using-Machine-Learning-with-Python" target="_blank">
+          <button class="bg-gray-800 px-4 py-2 rounded hover:bg-slate-700 transition">
+            <i class="bi bi-github"></i> Github
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <a style="color: white;"href="https://github.com/Ranjith1302" target="_blank">
+      <button  class="bg-blue-600 p-2 px-4 rounded hover:bg-blue-600 transition">
+        Load more <i class="bi bi-arrow-clockwise font-extrabold"></i>
+      </button>
+    </a>
+  </div>
+</div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="bg-gray-800 py-12 px-6 md:px-20 section-3d projects-3d">
+      <h2 style="font-family: Poppins-Bold" class="text-4xl font-extrabold mb-6 text-center">Contact</h2>
+      <form class="max-w-lg mx-auto bg-gray-700 p-6 rounded-lg shadow-md" action="/contact" method="POST" onsubmit="return validateForm()">
+        {% csrf_token %}
+        <input class="p-3 w-full mb-4 bg-gray-800 border border-gray-600 rounded focus:ring-2 focus:ring-blue-500" type="text" name="name" placeholder="Your Name">
+        <input class="p-3 w-full mb-4 bg-gray-800 border border-gray-600 rounded focus:ring-2 focus:ring-blue-500" type="email" name="email" placeholder="Your Email">
+        <input class="p-3 w-full mb-4 bg-gray-800 border border-gray-600 rounded focus:ring-2 focus:ring-blue-500" type="text" name="Phone" placeholder="Phone number">
+        <textarea class="p-3 w-full mb-4 bg-gray-800 border border-gray-600 rounded focus:ring-2 focus:ring-blue-500" name="message" rows="4" placeholder="Message"></textarea>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-semibold">Send</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- 3D Scroll JS -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        entry.target.classList.toggle('visible', entry.isIntersecting);
+      });
+    }, { threshold: 0.25 });
+    document.querySelectorAll('.section-3d').forEach(el => observer.observe(el));
+  </script>
+
+  <!-- 3D Scroll Styles -->
+  <style>
+    .section-3d { opacity: 0; transition: opacity 0.6s ease-out, transform 0.6s ease-out; transform-style: preserve-3d; }
+    .section-3d.visible { opacity: 1; }
+
+    /* Timeline: subtle rotateY */
+    .timeline-3d { transform: perspective(1000px) rotateY(15deg) translateZ(-30px); }
+    .timeline-3d.visible { transform: perspective(1000px) rotateY(0deg) translateZ(0); }
+
+    /* About: gentle rotateX downward */
+    .about-3d { transform: perspective(1000px) rotateX(10deg) translateY(20px); }
+    .about-3d.visible { transform: perspective(1000px) rotateX(0deg) translateY(0); }
+
+    /* Projects: mild pop-out */
+    .projects-3d { transform: perspective(1000px) translateZ(-20px) scale(0.99); }
+    .projects-3d.visible { transform: perspective(1000px) translateZ(0) scale(1); }
+
+    /* Contact: slight spin */
+    .contact-3d { transform: perspective(1000px) rotateZ(5deg) translateX(-10px); }
+    .contact-3d.visible { transform: perspective(1000px) rotateZ(0deg) translateX(0); }
+  </style>
+{% endblock content %}
